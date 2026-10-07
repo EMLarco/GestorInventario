@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${message}">Hola Mundo</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            margin-top: 80px;
+            background: #f5f7fa;
+            color: #1f2937;
+        }
+        .greeting {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        .languages {
+            display: flex;
+            gap: 12px;
+        }
+        .languages a {
+            padding: 10px 20px;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            background: #fff;
+        }
+        .languages a:hover {
+            background: #2563eb;
+            color: #fff;
+        }
+        .languages a.active {
+            background: #2563eb;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<h1 class="greeting" th:text="${message}">Hola Mundo</h1>
+
+<nav class="languages">
+    <a th:each="entry : ${languages}"
+       th:href="@{/(lang=${entry.key}, name=${name})}"
+       th:text="${entry.value}"
+       th:classappend="${entry.key == currentLang} ? 'active'">Espanol</a>
+</nav>
+</body>
+</html>

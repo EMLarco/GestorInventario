@@ -1,0 +1,51 @@
+﻿# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# SO
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configs locales/sensibles
+application-local.properties
+application-local.yml
+application-*.local.properties
+application-*.local.yml
+.env
+*.env
+.secrets
+
+# Tests/coverage
+surefire-reports/
+failsafe-reports/
+jacoco.exec
+coverage/
+
+# Build
+out/
+bin/
+build/
+
+# Temporales
+*.tmp
+*.swp
+*.swo
+*~
+
+# Entrega (no subir al repo)
+Entrega-Metadata-App/

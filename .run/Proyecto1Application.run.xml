@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Proyecto1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="proyecto1" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.proyecto1.Proyecto1Application" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+    <envs>
+      <env name="DB_URL" value="jdbc:postgresql://localhost:5432/proyecto1" />
+      <env name="DB_USER" value="postgres" />
+      <env name="DB_PASSWORD" value="277353" />
+    </envs>
+  </configuration>
+</component>
